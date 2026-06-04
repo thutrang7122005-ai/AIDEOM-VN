@@ -13,8 +13,18 @@ if project_root not in sys.path:
 
 # Nạp dữ liệu và các module
 from utils import load_all_data
-from modules import bai1, bai2, bai3, bai4, bai5, bai6, bai7, bai8, bai9, bai10, bai11, bai12
-
+import bai1
+import bai2
+import bai3
+import bai4
+import bai5
+import bai6
+import bai7
+import bai8
+import bai9
+import bai10
+import bai11
+import bai12
 st.title("📊 HỆ THỐNG MÔ HÌNH RA QUYẾT ĐỊNH PHÁT TRIỂN KINH TẾ VIỆT NAM")
 st.markdown("---")
 
