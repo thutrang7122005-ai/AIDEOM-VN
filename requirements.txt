@@ -8,3 +8,4 @@ pyomo
 scipy
 matplotlib
 pymoo
+cvxpy
