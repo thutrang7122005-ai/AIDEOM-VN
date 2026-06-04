@@ -2,15 +2,16 @@ import engine
 import os
 import sys
 
+
 # Cấu hình hệ thống
 os.environ["STREAMLIT_SERVER_RUN_ON_SAVE"] = "true"
+import streamlit as st
 st.set_page_config(page_title="Hệ thống Mô hình Ra quyết định Kinh tế VN", layout="wide")
 project_root = "/mount/src/aideom-vn"
 if project_root not in sys.path:
     sys.path.append(project_root)
 
 # Nạp dữ liệu và các module
-import streamlit as st
 from utils import load_all_data
 from modules import bai1, bai2, bai3, bai4, bai5, bai6, bai7, bai8, bai9, bai10, bai11, bai12
 
