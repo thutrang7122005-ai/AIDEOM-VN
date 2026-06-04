@@ -6,3 +6,4 @@ openpyxl
 pulp
 pyomo
 scipy
+matplotlib
