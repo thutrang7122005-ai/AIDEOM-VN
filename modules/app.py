@@ -7,6 +7,7 @@ os.environ["STREAMLIT_SERVER_RUN_ON_SAVE"] = "true"
 st.set_page_config(page_title="Hệ thống Mô hình Ra quyết định Kinh tế VN", layout="wide")
 
 # Nạp dữ liệu và các module
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils import load_all_data
 from modules import bai1, bai2, bai3, bai4, bai5, bai6, bai7, bai8, bai9, bai10, bai11, bai12
 
