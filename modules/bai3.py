@@ -94,7 +94,7 @@ def set_matplotlib_style():
 # HÀM CHÍNH run() — GỌI TỪ main.py
 # ===========================================================================
 
-def run():
+def run(*args, **kwargs):
     """
     Hàm điểm vào chính. Hiển thị toàn bộ Bài 3 lên giao diện Streamlit.
     Thứ tự: Lý thuyết (3.1→3.3) → Tính toán (3.4.1→3.4.4) → Thảo luận (3.5)
