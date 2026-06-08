@@ -9,3 +9,4 @@ scipy
 matplotlib
 pymoo
 cvxpy
+seaborn
