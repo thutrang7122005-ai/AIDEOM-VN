@@ -94,10 +94,19 @@ def set_matplotlib_style():
 # HÀM CHÍNH run() — GỌI TỪ main.py
 # ===========================================================================
 
-def run(*args, **kwargs):
+def run(df_macro, df_sectors, df_regions):
     """
     Hàm điểm vào chính. Hiển thị toàn bộ Bài 3 lên giao diện Streamlit.
     Thứ tự: Lý thuyết (3.1→3.3) → Tính toán (3.4.1→3.4.4) → Thảo luận (3.5)
+
+    Args:
+        df_macro   : DataFrame chỉ số kinh tế vĩ mô (truyền từ app.py).
+        df_sectors : DataFrame dữ liệu ngành (truyền từ app.py).
+        df_regions : DataFrame dữ liệu vùng/địa phương (truyền từ app.py).
+
+    Lưu ý: Bài 3 sử dụng dữ liệu tĩnh nội bộ RAW_CSV cho phần tính toán
+    Priority Index. Các tham số trên được nhận để tương thích với giao diện
+    gọi hàm thống nhất của app.py và có thể mở rộng sử dụng trong tương lai.
     """
     try:
         set_matplotlib_style()
@@ -578,4 +587,5 @@ if __name__ == "__main__":
         page_icon="📊",
         layout="wide",
     )
-    run()
+    # Khi chạy độc lập, truyền None cho 3 tham số — Bài 3 dùng dữ liệu tĩnh nội bộ
+    run(df_macro=None, df_sectors=None, df_regions=None)
